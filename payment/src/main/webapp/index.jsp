@@ -8,7 +8,7 @@
 </head>
 <body>
 
-	<h2>kakao</h2>
+	<h2>결제</h2>
 	<form action="<%=request.getContextPath()%>/buy.do" method="post">
 
 			
@@ -17,7 +17,8 @@
 		폰넘버:<input type="text" name="phone">
 		주소: <input type="text" name="address">
 		총가격: <input type="text" name="totalPrice">
-		<input type="submit" value="결제하기">
+		<!-- <input type="submit" value="결제하기"> -->
+		<button onclick="requestPay()">결제하기</button>
 		<input type="reset"  value="취소하기">
 	</form>
 </body>
