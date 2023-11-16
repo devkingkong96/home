@@ -26,12 +26,20 @@ public class PaymentConfirm extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		System.out.println("/payments/complete.do");
-		response.setContentType("text/html; charset=utf-8");
+		request.setCharacterEncoding("UTF-8");
+		
 		String imp=request.getParameter("imp_uid");
 		String merchant_uid=request.getParameter("merchant_uid");
+		String name=request.getParameter("buyerName");
+		String total=request.getParameter("total");
+		String amount=request.getParameter("amount");
+		String memo=request.getParameter("shipping_request");
 		System.out.println(imp);
 		System.out.println(merchant_uid);
+		System.out.println(name);
+		System.out.println(total);
+		System.out.println(amount);
+		System.out.println(memo);
 		
 		
 	}

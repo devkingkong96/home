@@ -26,6 +26,7 @@ public class PaymentFail extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		System.out.println("/fail.do");
 		System.out.println("결제 실패");
 		
 		
