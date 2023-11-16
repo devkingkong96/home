@@ -33,13 +33,13 @@ public class PaymentConfirm extends HttpServlet {
 		String name=request.getParameter("buyerName");
 		String total=request.getParameter("total");
 		String amount=request.getParameter("amount");
-		String memo=request.getParameter("shipping_request");
+		String paid_at=request.getParameter("paid_at");
 		System.out.println(imp);
 		System.out.println(merchant_uid);
 		System.out.println(name);
 		System.out.println(total);
 		System.out.println(amount);
-		System.out.println(memo);
+		System.out.println(paid_at);
 		
 		
 	}

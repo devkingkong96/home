@@ -150,6 +150,7 @@ function cacao_payment(){
                     total : rsp.paid_amount, //결제된 금액
                     buyerName : rsp.buyer_name, //주문자 이름
                     amount : rsp.paid_amount, //총가격
+                    paid_at : rsp.paid_at //결제승인 시각
                     //필요한 데이터가 있으면 추가
                 }
             })
