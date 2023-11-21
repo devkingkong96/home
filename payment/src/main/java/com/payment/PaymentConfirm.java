@@ -37,22 +37,17 @@ public class PaymentConfirm extends HttpServlet {
 		
 		String imp=request.getParameter("imp_uid");
 		String merchant_uid=request.getParameter("merchant_uid");
-<<<<<<< HEAD
 		String name=request.getParameter("buyerName");
 		String total=request.getParameter("total");
 		String amount=request.getParameter("amount");
-<<<<<<< HEAD
 		String memo=request.getParameter("memo");
-=======
 		String paid_at=request.getParameter("paid_at");
->>>>>>> branch 'ksj' of https://github.com/devkingkong96/home.git
 		System.out.println(imp);
 		System.out.println(merchant_uid);
 		System.out.println(name);
 		System.out.println(total);
 		System.out.println(amount);
 		System.out.println(paid_at);
-=======
 		
 //		try {
 //            IamportResponse<Payment> paymentResponse = api.paymentByImpUid(imp);
@@ -60,7 +55,6 @@ public class PaymentConfirm extends HttpServlet {
 //        } catch (IamportResponseException e) {
 //            // TODO: 예외 처리 로직 구현
 //        }
->>>>>>> branch 'ksj' of https://github.com/devkingkong96/home.git
 		
 		
 	}
