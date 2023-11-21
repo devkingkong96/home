@@ -45,8 +45,8 @@ public class GetTokenServlet extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-//		String apiKey = request.getParameter("apiKey");
-//        String secretKey = request.getParameter("secretKey");
+		String apiKey = request.getParameter("apiKey");
+        String secretKey = request.getParameter("secretKey");
 
         // API 키와 시크릿 키를 사용하여 액세스 토큰을 요청하는 메소드 호출
         String accessToken = getToken("1351426225816408", "cfHurcVtJYllMUeKbWmEhhvu9CQmFEAutcrNomOiB0xv3OFhJnONYdPPjHSmLKiorN4fDHTIAyEuNReb");
